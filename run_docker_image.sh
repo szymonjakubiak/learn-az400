@@ -1,1 +1,1 @@
-docker run --rm -it $(docker build -q .)
+docker run --rm -it --network="host" $(docker build -q .)
