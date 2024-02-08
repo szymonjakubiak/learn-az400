@@ -1,8 +1,8 @@
 FROM ubuntu:22.04
 
-RUN apt update
-RUN apt upgrade -y
-RUN apt install -y curl git jq libicu70
+RUN apt-get update
+RUN apt-get -y upgrade 
+RUN apt-get -y install -y curl git jq libicu70 libpython3.10-dev
 
 ENV TARGETARCH="linux-x64"
 
